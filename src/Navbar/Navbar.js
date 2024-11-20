@@ -113,7 +113,7 @@ function Navbar() {
               className="text-gray-600 mr-2 w-4  transition duration-300 hover:text-gray-900"
             />
             <Link
-              to="/"
+              to="/Home"
               className="text-gray-600 hover:text-gray-900 font-poppins"
             >
               Home
