@@ -22,8 +22,8 @@ const Home = () => {
         <p className="text-gray-800 mt-2">Frontend Developer & Web Designer</p>
         <p className="text-gray-600 mt-4">
           I am passionate about developing innovative, user-friendly solutions
-          using modern technologies. With expertise in React, Tailwind CSS, and
-          JavaScript, I strive to write clean, efficient code and deliver
+          using modern technologies. With expertise in React, Vue, Tailwind CSS
+          and JavaScript, I strive to write clean, efficient code and deliver
           high-quality results for every project.
         </p>
         <div className="mt-10">
