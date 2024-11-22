@@ -7,7 +7,6 @@ import {
   faRocket,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,24 +22,24 @@ function Navbar() {
               icon={faHome}
               className="text-gray-600 mr-2 w-3  transition duration-300 hover:text-gray-900 "
             />
-            <Link
-              to="/Home"
+            <a
+              href="/"
               className="text-gray-600 hover:text-gray-900 font-poppins"
             >
               Home
-            </Link>
+            </a>
           </li>
           <li className="flex flex-col items-center">
             <FontAwesomeIcon
               icon={faUser}
               className="text-gray-600 mr-2 w-3 transition duration-300 hover:text-gray-900"
             />
-            <Link
-              to="/about"
+            <a
+              href="#about"
               className="text-gray-600 hover:text-gray-900 font-poppins"
             >
               About
-            </Link>
+            </a>
           </li>
           <li className="flex flex-col items-center">
             <FontAwesomeIcon
@@ -112,24 +111,24 @@ function Navbar() {
               icon={faHome}
               className="text-gray-600 mr-2 w-4  transition duration-300 hover:text-gray-900"
             />
-            <Link
-              to="/Home"
+            <a
+              href="/"
               className="text-gray-600 hover:text-gray-900 font-poppins"
             >
               Home
-            </Link>
+            </a>
           </li>
           <li className="flex  items-center">
             <FontAwesomeIcon
               icon={faUser}
               className="text-gray-600 mr-2 w-4 transition duration-300 hover:text-gray-900"
             />
-            <Link
-              to="/about"
+            <a
+              href="#about"
               className="text-gray-600 hover:text-gray-900 font-poppins"
             >
               About
-            </Link>
+            </a>
           </li>
           <li className="flex  items-center">
             <FontAwesomeIcon
