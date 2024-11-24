@@ -18,6 +18,8 @@ module.exports = {
       },
       colors: {
         customGray: "#fafafa",
+        customWhite: "#fff",
+        customBorder: "#00000014",
       },
     },
   },

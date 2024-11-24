@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faBriefcase,
+  faProjectDiagram,
+  faCertificate,
+  faFileAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
   return (
     <section id="about" className="m-12">
       <div className="mt-20 mb-10 flex justify-center items-center">
@@ -11,7 +22,10 @@ const About = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex justify-center items-center">
-          <button className="flex justify-center items-center hover:scale-110 transition-transform duration-300 ease-in-out">
+          <button
+            onClick={toggleModal}
+            className="flex justify-center items-center hover:scale-110 transition-transform duration-300 ease-in-out"
+          >
             <div
               className="border-solid border-gray-200 border rounded-lg bg-gray-100 p-20"
               style={{
@@ -35,11 +49,84 @@ const About = () => {
             </div>
           </button>
         </div>
+        {isModalOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="bg-white rounded-lg shadow-lg p-8 w-96">
+              <h2 className="text-2xl font-bold mb-4">About Me</h2>
+              <p className="text-gray-700">
+                Hi, I'm Bilge! 👋 A Software Engineer with a background in
+                Mechatronics Engineering. I specialize in React.js, JavaScript,
+                and modern front-end technologies, crafting user-focused
+                applications with clean and efficient code. With experience in
+                companies like Yapı Kredi Technology and academic projects in
+                robotics, I bring a multi-disciplinary perspective to
+                problem-solving. My passion lies in building innovative,
+                high-performance web solutions and continuously learning new
+                technologies. When I’m not coding, I enjoy drawing, exploring
+                robotics, and dreaming about my future adventures in Japan. 🚀
+              </p>
+              <div className="flex justify-end mt-4">
+                <button
+                  onClick={toggleModal}
+                  className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
-        {/* Diğer içerikler */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div>bilge</div>
-          <div>bilge</div>
+          <div>
+            <div className="border flex flex-col items-center justify-center rounded-xl bg-customWhite border-customBorder p-4">
+              <FontAwesomeIcon
+                icon={faBriefcase}
+                className="text-lg transform transition-transform duration-300  "
+              />
+              <h3>Experience</h3>
+              <div className="text-xs text-gray-600">
+                <h6>- Yapı Kredi Technology </h6>
+                <h6>- Toyota </h6>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="border flex flex-col items-center justify-center rounded-xl bg-customWhite border-customBorder p-6">
+              <FontAwesomeIcon
+                icon={faProjectDiagram}
+                className="text-lg transform transition-transform duration-300  "
+              />
+              <h3>Completed</h3>
+              <div className="text-xs text-gray-600">
+                <h6>50 + Projects </h6>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="border flex flex-col items-center justify-center rounded-xl bg-customWhite border-customBorder p-6">
+              <FontAwesomeIcon
+                icon={faCertificate}
+                className="text-lg transform transition-transform duration-300  "
+              />
+              <h3>Bootcamps</h3>
+              <div className="text-xs text-gray-600">
+                <h6> Ctrl+ Future Bootcamp (2023) </h6>
+              </div>
+            </div>
+          </div>
+          <a href="/Bilge_Kose_CV.pdf" download="Bilge_Kose_CV">
+            <div className="border flex flex-col items-center justify-center rounded-xl bg-customWhite border-customBorder  hover:bg-gray-500 hover:text-white p-6">
+              <FontAwesomeIcon
+                icon={faFileAlt}
+                className="text-lg transform transition-transform duration-300  "
+              />
+              <h3>Download CV</h3>
+              <div className="text-xs text-red-950 hover:text-white">
+                <h6> Click here to download the CV </h6>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
