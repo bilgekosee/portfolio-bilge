@@ -20,6 +20,7 @@ module.exports = {
         customGray: "#fafafa",
         customWhite: "#fff",
         customBorder: "#00000014",
+        bgWhite: "#f9fafb",
       },
     },
   },

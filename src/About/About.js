@@ -15,8 +15,8 @@ const About = () => {
     setIsModalOpen(!isModalOpen);
   };
   return (
-    <section id="about" className="m-12">
-      <div className="mt-20 mb-10 flex justify-center items-center">
+    <section id="about" className="m-12 ">
+      <div className="mt-20 mb-10 flex justify-center items-center ">
         <h2 className="text-3xl font-bold text-gray-700">About Me</h2>
       </div>
 

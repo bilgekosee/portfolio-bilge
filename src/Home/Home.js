@@ -3,9 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faComments } from "@fortawesome/free-solid-svg-icons";
 import About from "../About/About";
+import Project from "../Projects/Projects";
 const Home = () => {
   return (
-    <>
+    <div className="bg-bgWhite">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4  pt-40  ">
         <div className=" flex flex-col items-center gap-y-3 xs:ml-0 ml-14 ">
           <div className="relative w-64 h-64 ">
@@ -56,7 +57,8 @@ const Home = () => {
         </div>
       </div>
       <About />
-    </>
+      <Project />
+    </div>
   );
 };
 

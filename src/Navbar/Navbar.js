@@ -47,7 +47,7 @@ function Navbar() {
               className="text-gray-600 mr-2 w-3 transition duration-300 hover:text-gray-900"
             />
             <a
-              href="#projects"
+              href="#project"
               className="text-gray-600 hover:text-gray-900 font-poppins"
             >
               Projects
@@ -136,7 +136,7 @@ function Navbar() {
               className="text-gray-600 mr-2 w-4 transition duration-300 hover:text-gray-900"
             />
             <a
-              href="#projects"
+              href="#project"
               className="block text-gray-500  hover:text-gray-900 font-poppins"
               onClick={() => setIsOpen(false)}
             >
