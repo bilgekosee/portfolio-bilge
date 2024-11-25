@@ -91,13 +91,13 @@ const StackIcons = ({ data }) => {
           className={`px-2 py-1 rounded text-sm ${
             item === "react"
               ? "bg-blue-200"
-              : item === "express"
-              ? "bg-yellow-200"
-              : item === "node"
+              : item === "vue"
+              ? "bg-purple-200"
+              : item === "C++"
               ? "bg-red-200"
               : item === "python"
               ? "bg-green-200"
-              : item === "django"
+              : item === "C#"
               ? "bg-teal-200"
               : "bg-gray-200"
           }`}
