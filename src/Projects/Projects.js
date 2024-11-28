@@ -15,7 +15,7 @@ const data = [
       "The backend part can be added to make the project more stable and functional.",
   },
   {
-    project: "Anime Bölüm Takip",
+    project: "Anime Episode Tracking",
     stack: ["vue"],
     description:
       "With this site, you can search for the anime you're watching and mark the episode you left off. It's a great convenience for anime lovers! :)",
