@@ -4,6 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faComments } from "@fortawesome/free-solid-svg-icons";
 import About from "../About/About";
 import Project from "../Projects/Projects";
+import Skills from "../Skills/Skills";
 const Home = () => {
   return (
     <div className="bg-bgWhite">
@@ -58,6 +59,7 @@ const Home = () => {
       </div>
       <About />
       <Project />
+      <Skills />
     </div>
   );
 };

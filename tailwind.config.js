@@ -21,6 +21,7 @@ module.exports = {
         customWhite: "#fff",
         customBorder: "#00000014",
         bgWhite: "#f9fafb",
+        skillsBorder: "#0000001a",
       },
     },
   },
