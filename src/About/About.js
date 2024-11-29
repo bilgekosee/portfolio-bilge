@@ -115,7 +115,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <a href="/Bilge_Kose_CV.pdf" download="Bilge_Kose_CV">
+          <a href="/revize-CV.pdf" download="Bilge_Kose_CV">
             <div className="border flex flex-col items-center justify-center rounded-xl bg-customWhite border-customBorder  hover:bg-gray-500 hover:text-white p-6">
               <FontAwesomeIcon
                 icon={faFileAlt}
