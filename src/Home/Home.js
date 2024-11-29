@@ -6,10 +6,11 @@ import About from "../About/About";
 import Project from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import Qualification from "../Qualification/Qualification";
+import Contact from "../Contact/Contact";
 const Home = () => {
   return (
     <div className="bg-bgWhite">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4  pt-40  ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4  pt-40  scroll-smooth">
         <div className=" flex flex-col items-center gap-y-3 xs:ml-0 ml-14 ">
           <div className="relative w-64 h-64 ">
             <div className="absolute -inset-2 bg-gradient-to-r from-black via-gray-300 to-black rounded-full blur-lg opacity-80 animate-pulse"></div>
@@ -62,6 +63,7 @@ const Home = () => {
       <Project />
       <Skills />
       <Qualification />
+      <Contact />
     </div>
   );
 };
