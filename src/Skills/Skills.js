@@ -13,7 +13,7 @@ const Skills = () => {
         <h2 className="text-3xl font-bold text-gray-700">Skills</h2>
         <h6 className="text-xs text-gray-500">My Technical Level</h6>
       </div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-6">
         <div className="border bg-customWhite border-customBorder rounded-xl px-8 py-16 flex flex-col justify-center items-center">
           <h4 className="text-xl font-medium text-gray-900 mb-6">
             Programming Languages

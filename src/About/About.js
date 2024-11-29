@@ -20,7 +20,7 @@ const About = () => {
         <h2 className="text-3xl font-bold text-gray-700">About Me</h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 m-6">
         <div className="flex justify-center items-center">
           <button
             onClick={toggleModal}

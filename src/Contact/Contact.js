@@ -41,7 +41,7 @@ const Contact = () => {
                 Write me your project
               </h2>
             </div>
-            <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+            <form className="mt-8 space-y-6 ml-6 mr-6" onSubmit={handleSubmit}>
               <div className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-lg text-gray-600">
