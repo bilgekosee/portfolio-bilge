@@ -224,7 +224,7 @@ const Contact = () => {
                 <a
                   href="https://www.linkedin.com/in/bilgekosee/"
                   target="#"
-                  className={`block bg-gray-300 p-4 rounded-lg text-[#0077B5] mb-4 mt-4 transition-all duration-700 ${
+                  className={`block bg-gray-300 p-4  rounded-lg text-[#0077B5] mb-20 mt-4 transition-all duration-700 ${
                     active
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 -translate-y-2"
